@@ -1,0 +1,33 @@
+/* Стили для хедера */
+
+.header {
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.nav__list-link {
+    font-size: 18px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.contact__phone {
+    font-size: 18px;
+    line-height: 20px;
+    color: #95459A;
+}
+
+.contact__us {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 11px 40px 11px 40px;
+    background: #008752;
+}
+
+/* СТили для основного контента */
+
+.awards {
+    display: none;
+}
