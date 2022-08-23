@@ -7,14 +7,6 @@
     align-items: center;
 }
 
-.title {
-    font-family: ;
-}
-
-.sub__title {
-    font-family: ;
-}
-
 .nav__list {
     display: flex;
     column-gap: 15px;
@@ -76,7 +68,9 @@
     color: #00559D;
 }
 
+.services {
+    display: flex;
+}
+
 
 /* стили футера */
-
-.footer {}
