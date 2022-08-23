@@ -10,7 +10,6 @@
 .nav__list {
     display: flex;
     column-gap: 15px;
-
 }
 
 .nav__wrapper {
@@ -34,12 +33,14 @@
 }
 
 .contact__us {
+    display: inline-block;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     padding: 11px 40px 11px 40px;
     background: #008752;
+    margin-top: 20px;
 }
 
 /* СТили для основного контента */
@@ -56,6 +57,9 @@
     margin-bottom: 80px;
     background-color: #E0E7ED;
     background-size: contain;
+    right: 1px;
+    bottom: 1px;
+
 }
 
 .title {
@@ -66,11 +70,120 @@
     line-height: 100%;
     padding-left: 10px;
     color: #00559D;
+    z-index: 20;
 }
 
-.services {
+.subtitle__serv {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 50px;
+    color: #00559D;
+}
+
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    /* justify-content: flex-start; */
+
+}
+
+
+.service__list-item {
+    width: 280px;
+    margin: 10px;
+}
+
+.about {
+    margin-top: 110px;
+    display: flex;
+    position: relative;
+}
+
+.about::after {
+    content: '';
+    display: block;
+    width: 570px;
+    height: 500px;
+    top: 30px;
+    left: 830px;
+    background: #008752;
+    position: absolute;
+    z-index: -1;
+}
+
+.about-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    color: #005DAB;
+}
+
+.about-container {
+    width: 480px;
+}
+
+.about__image {
+    width: 580px;
+    height: 430px;
+}
+
+.about__desc {
+    margin-top: 46px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.awards__sec {
+    margin-top: 106px;
+    margin-bottom: 80px;
+}
+
+
+.awards__list {
     display: flex;
 }
 
+.awards__list-item {
+    margin-right: 46px;
+    opacity: 0.5;
+}
+
+.map {
+    position: relative;
+}
+
+.adress__map {
+    position: absolute;
+    top: 50px;
+}
 
 /* стили футера */
+
+.footer__wrapper {
+    background-color: #00559D;
+}
+
+.serv__wrap {
+    display: flex;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.serv__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 130%;
+    color: #ffffff;
+}
+
+.services {
+    display: inline-flex;
+}
+
+.popup {
+    display: none;
+}
