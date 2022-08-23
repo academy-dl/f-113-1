@@ -1,20 +1,44 @@
 /* Стили для хедера */
 
 .header {
+    display: flex;
     margin-top: 33px;
     margin-bottom: 33px;
+    align-items: center;
+}
+
+.title {
+    font-family: ;
+}
+
+.sub__title {
+    font-family: ;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 15px;
+
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+
 }
 
 .nav__list-link {
     font-size: 18px;
     line-height: 20px;
     color: #333333;
+    font-weight: 600;
 }
 
 .contact__phone {
     font-size: 18px;
     line-height: 20px;
     color: #95459A;
+    margin-right: 24px;
 }
 
 .contact__us {
@@ -31,3 +55,28 @@
 .awards {
     display: none;
 }
+
+.banner {
+    background-image: url(../static/img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 140px 0 285px;
+    margin-bottom: 80px;
+    background-color: #E0E7ED;
+    background-size: contain;
+}
+
+.title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    padding-left: 10px;
+    color: #00559D;
+}
+
+
+/* стили футера */
+
+.footer {}
