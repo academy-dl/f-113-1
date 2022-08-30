@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/normolize.css">
@@ -52,7 +48,7 @@
         </section>
         <div class="container">
             <section>
-                <h2 class="subtitle__serv">OUR MOST POPULAR SERVICES</h2>
+                <h2 class="title">OUR MOST POPULAR SERVICES</h2>
                 <ul class="service__list">
                     <li class="service__list-item">
                         <img src="./static/img/spange_blue.jpg"
@@ -145,7 +141,7 @@
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1677.6450014961963!2d49.29244368480238!3d53.512263684423004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1660841187048!5m2!1sru!2sru"
-                width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+                width="100%" height="105" style="border:0;" allowfullscreen="true" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <section class="adress__map">
                 <div>
@@ -158,6 +154,7 @@
                 </div>
                 <div>Map</div>
             </section>
+           
         </div>
         <section class="footer__wrapper">
             <div class="container">
@@ -195,57 +192,29 @@
         </section>
     </footer>
     </div>
+    <div class="popup__overlay"></div>
     <section class="popup">
-        <h1>Contact Us</h1>
-        <form action="#">
+        <form action="#" class="popup__form">
             <div>
-                <div>
-                    <label for="input-name">Name</label>
-                    <input id="input-name" type="text" placeholder="Ivan Ivanov">
-                </div>
-                <div>
-                    <label for="input-phone">Phone</label>
-                    <input id="input-phone" type="tel">
+                <div class="field__wrapper">
+                    <div class="input__name__wr">
+                        <label for="input-name">Name</label>
+                        <input id="input-name" type="text" placeholder="Ivan Ivanov" class="input__name">
+                    </div>
+                    <div class="input__phone__wr">
+                        <label for="input-phone">Phone</label>
+                        <input id="input-phone" type="tel" class="input__phone">
+                    </div>
                 </div>
                 <div>
                     <label for="input-mail">E-mail</label>
-                    <input type="email" name="" id="input-mail">
+                    <input type="email" name="" id="input-mail" class="input__email">
                 </div>
-                <fieldset>
-                    <legend>Payment Methods</legend>
-                    <ul>
-                        <li>
-                            <input id="input-cash" type="checkbox">
-                            <label for="input-cash">Сash</label>
-                        </li>
-                        <li>
-                            <input id="input-credit" type="checkbox">
-                            <label for="input-credit">Сredit Сard</label>
-                        </li>
-                        <li>
-                            <input id="input-receipt" type="checkbox">
-                            <label for="input-receipt">Receipt</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <label for="input-city">
-                    <span>City of Birth</span>
-                    <input id="input-city" type="text">
-                </label>
-                <fieldset>
-                    <legend>Do you need a report on the services provided?</legend>
-                    <div>
-                        <input id="input-yes" type="radio" name="radio_group" value="yes">
-                        <label for="input-yes">yes</label>
-                        <input id="input-no" type="radio" name="radio_group" value="no">
-                        <label for="input-no">no</label>
-                    </div>
-                </fieldset>
                 <div>
-                    <label for="input_message">message</label>
-                    <textarea name="" id="input_message" cols="30" rows="10"></textarea>
+                    <label for="input_message">Message</label>
+                    <textarea name="" id="input_message" class="input__message" maxlength="100"></textarea>
                 </div>
-                <button type="submit">SUBMIT</button>
+                <button type="submit" class="btn">SUBMIT</button>
             </div>
         </form>
 </body>

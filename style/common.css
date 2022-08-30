@@ -1,10 +1,11 @@
 * {
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    src: url();
+    src: url(../static/fonts/Lato/Lato-Regular.ttf);
 }
 
 a {
@@ -16,5 +17,31 @@ li {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1180px;
+}
+
+input {
+    outline: none;
+}
+
+label, legend {
+    font-size: 18px;
+    line-height: 22px;
+    color: #6B6A6A;
+    margin-bottom: 6px;
+    display: block;
+    border: 0;
+}
+
+textarea {
+    display: block;
+    resize: none;
+    overflow: hidden;
+}
+
+.btn {
+    width: 181px;
+    height: 40px;
+    background: #008752;
+    color: #ffffff;
 }
