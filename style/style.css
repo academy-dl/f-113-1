@@ -1,223 +1,156 @@
-/* Стили для хедера */
 
-.header {
+/* BANNER */
+.banner {
+    /* background: url(../img/fon.jpg) no-repeat center #e0e7ed; */
+    background-image: url(../static/img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e0e7ed;
+    /* background-size: cover; */
+    padding: 143px 0 286px;
+    margin-bottom: 80px;
+}
+
+.banner-title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    color: #00559D;
+    margin: 0;
+    margin-bottom: 49px;
+    width: 80%;
+    letter-spacing: -1px;
+}
+
+/* services */
+
+.services {
+    margin-bottom: 110px;
+}
+
+.services-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
+}
+
+.services-list {
     display: flex;
-    margin-top: 33px;
-    margin-bottom: 33px;
-        align-items: center;
-    }
-    
-    .nav__list {
-        display: flex;
-        column-gap: 15px;
-    }
-    
-    .nav__wrapper {
-        display: flex;
-        align-items: center;
-    }
-    
-    .nav__list-link {
-        font-size: 18px;
-        line-height: 20px;
-        color: #333333;
-        font-weight: 600;
-    }
-    
-    .contact__phone {
-        font-size: 18px;
-        line-height: 20px;
-        color: #95459A;
-        margin-right: 24px;
-    }
-    
-    .contact__us {
-        display: inline-block;
-        font-size: 16px;
-        line-height: 18px;
-        text-transform: uppercase;
-        color: #ffffff;
-        padding: 11px 40px 11px 40px;
-        background: #008752;
-        margin-top: 20px;
-    }
-    
-    /* СТили для основного контента */
-    
-    .awards {
-        display: none;
-    }
-    
-    .banner {
-        background-image: url(../static/img/banner.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 140px 0 285px;
-        margin-bottom: 31px;
-        background-color: #E0E7ED;
-        background-size: contain;
-        right: 1px;
-        bottom: 1px;
-    
-    }
-    
-    .title {
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-        font-size: 90px;
-        line-height: 100%;
-        padding-left: 10px;
-        color: #00559D;
-        z-index: 20;
-    }
-    
-    .subtitle__serv {
-        text-align: center;
-        margin-bottom: 50px;
-        font-size: 42px;
-        line-height: 50px;
-        color: #00559D;
-    }
-    
-    .service__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -10px;
-        /* justify-content: flex-start; */
-    
-    }
-    
-    
-    .service__list-item {
-        width: 280px;
-        margin: 10px;
-    }
-    
-    .about {
-        margin-top: 110px;
-        display: flex;
-        position: relative;
-    }
-    
-    .about::after {
-        content: '';
-        display: block;
-        width: 570px;
-        height: 500px;
-        top: 30px;
-        left: 830px;
-        background: #008752;
-        position: absolute;
-        z-index: -1;
-    }
-    
-    .about-title {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 72px;
-        color: #005DAB;
-    }
-    
-    .about-container {
-        width: 480px;
-    }
-    
-    .about__image {
-        width: 580px;
-        height: 430px;
-    }
-    
-    .about__desc {
-        margin-top: 46px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-    }
-    
-    
-    .awards__sec {
-        margin-top: 106px;
-        margin-bottom: 80px;
-    }
-    
-    
-    .awards__list {
-        display: flex;
-    }
-    
-    .awards__list-item {
-        margin-right: 46px;
-        opacity: 0.5;
-    }
-    
-    .map {
-        position: relative;
-    }
-    
-    .adress__map {
-        position: absolute;
-        top: 50px;
-    }
-    
-    /* стили футера */
-    
-    .footer__wrapper {
-        background-color: #00559D;
-    }
-    
-    .serv__wrap {
-        display: flex;
-        padding-top: 54px;
-        padding-bottom: 54px;
-    }
-    
-    .serv__title {
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 130%;
-        color: #ffffff;
-    }
-    
-    .services {
-        display: inline-flex;
-    }
-    
-    .popup {
-        display: none;
-        position: fixed;
-        width: 680px;
-        left: 360px;
-        top: 167px;
-        background: #EEEEEE;
-    }
-    
-    .popup__form {
-        padding: 50px;
-    }
-    
-    .field__wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    
-    .input__name {
-        width: 280px;
-        height: 50px;
-        margin-right: 20px;
-    }
-    
-    .input__phone {
-        width: 280px;
-        height: 50px;
-    }
-    
-    .input__email, .input__message {
-        width: 580px;
-        height: 50px;
-        margin-bottom: 20px;
-    }
-    
-    .popup__overlay {
-        background-color: rgba(149, 69, 154, 0.9);
-    }
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    /* justify-content: space-between; */
+}
+
+.services-item {
+    width: 280px;
+    margin: 10px;
+}
+
+/* .services-item:first-child {
+    margin-left: 0;
+}
+.services-item:nth-child(4n) {
+    margin-right: 0;
+} */
+
+.services-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2C3036;
+    margin: 19px 0 20px;
+    width: 70%;
+}
+
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 186px;
+    position: relative;
+}
+
+.about:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: -90px;
+    width: 570px;
+    height: 499px;
+    background: #008752;
+}
+
+.about-title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #005DAB;
+    margin: 0 0 46px;
+}
+
+.about-wrapper {
+    max-width: 480px;
+}
+
+.about-img {
+    z-index: 1;
+}
+
+/* AWARDS */
+
+.awards {
+    margin-bottom: 80px;
+}
+
+.awards-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* popup */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(149, 69, 154, 0.9);
+    bottom: 0;
+    z-index: 2;
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-open {
+    display: flex;
+}
+
+.popup-form {
+    width: 680px;
+    background: #EEEEEE;
+    padding: 50px;
+    position: relative;
+/* 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+
+.popup-close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
